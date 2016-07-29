@@ -16,7 +16,10 @@ fluentcms-button
 
 Displaying a Bootstrap 3 Button_ in text.
 
-This button can be used for navigation.
+This button can be used for navigation,
+for example at the end of a text block.
+
+These buttons can't be used in forms.
 
 
 Installation
@@ -65,6 +68,36 @@ which can either be overwritten, or replaced in your own CSS files.
 The defaults provided by Bootstap 3 is: https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_buttons.scss
 
 When you use Sass, you can also override the Sass variables.
+
+
+Configuration
+=============
+
+When desired, the following settings can be overwritten:
+
+.. code-block:: html+django
+
+    from django.utils.translation import pgettext_lazy
+
+    FLUENTCMS_BUTTON_STYLES = (
+        ('btn-default', pgettext_lazy("button-style", u"Default")),
+        ('btn-primary', pgettext_lazy("button-style", u"Primary")),
+        ('btn-success', pgettext_lazy("button-style", u"Success")),
+        ('btn-info', pgettext_lazy("button-style", u"Info")),
+        ('btn-warning', pgettext_lazy("button-style", u"Warning")),
+        ('btn-danger', pgettext_lazy("button-style", u"Danger")),
+        ('btn-link', pgettext_lazy("button-style", u"Link")),
+    )
+
+    FLUENTCMS_BUTTON_SIZES = (
+        ('', pgettext_lazy("button-size", u"Default")),
+        ('btn-lg', pgettext_lazy("button-size", u"Large")),
+        ('btn-sm', pgettext_lazy("button-size", u"Small")),
+        ('btn-xs', pgettext_lazy("button-size", u"Extra Small")),
+    )
+
+By default, the standard Bootstrap button classes are used.
+These can be redefined when the project uses other classes for the buttons.
 
 Contributing
 ------------
