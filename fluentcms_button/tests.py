@@ -9,9 +9,17 @@ class ButtonTests(TestCase):
     Testing private notes
     """
 
-    def test_no_output(self):
+    def test_primary(self):
         """
-        Test that the item doens't produce output.
+        Test the standard button
         """
         item = create_content_item(ButtonItem, url='http://example.com', style='btn-primary', title='TEST')
-        self.assertEqual(render_content_items([item]).html, u'<a href="http://example.com" class="btn btn-primary">TEST</a>\n')
+        self.assertHTMLEqual(render_content_items([item]).html, u'<a href="http://example.com" class="btn btn-primary">TEST</a>')
+
+    def test_align_center(self):
+        """
+        Test the center-align feature.
+        """
+        item = create_content_item(ButtonItem, url='http://example.com', style='btn-default', title='TEST2', align='center')
+        self.assertHTMLEqual(render_content_items([item]).html,
+                             u'<div class="text-center"><a href="http://example.com" class="btn btn-default">TEST2</a></div>')

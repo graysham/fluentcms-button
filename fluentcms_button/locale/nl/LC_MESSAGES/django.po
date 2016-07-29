@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-29 15:22+0200\n"
+"POT-Creation-Date: 2016-07-29 20:08+0200\n"
 "PO-Revision-Date: 2016-07-29 15:24+0100\n"
+"Last-Translator: Diederik van der Boor <vdboor@edoburu.nl>\n"
+"Language-Team: \n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Last-Translator: Diederik van der Boor <vdboor@edoburu.nl>\n"
-"Language-Team: \n"
 "X-Generator: Poedit 1.7.4\n"
 
 #: appsettings.py:5
@@ -77,30 +77,51 @@ msgstr "Extra klein"
 msgid "Navigation"
 msgstr "Navigatie"
 
-#: content_plugins.py:21
-msgid "Appearance"
-msgstr "Verschijning"
+#: models.py:18
+msgctxt "align"
+msgid "Inline"
+msgstr "Tussen tekst"
 
-#: models.py:17
+#: models.py:19
+msgctxt "align"
+msgid "Left"
+msgstr "Links"
+
+#: models.py:20
+msgctxt "align"
+msgid "Center"
+msgstr "Midden"
+
+#: models.py:21
+msgctxt "align"
+msgid "Right"
+msgstr "Rechts"
+
+#: models.py:22
+msgctxt "align"
+msgid "Full Width"
+msgstr "Volledige breedte"
+
+#: models.py:25
 msgid "Title"
 msgstr "Titel"
 
-#: models.py:18
+#: models.py:26
 msgid "URL"
 msgstr "URL"
 
-#: models.py:20
+#: models.py:28
 msgid "Style"
 msgstr "Stijl"
 
-#: models.py:21
+#: models.py:29
 msgid "Size"
 msgstr "Grootte"
 
-#: models.py:23
-msgid "Span the full width"
-msgstr "Gebruik de volledige breedte"
+#: models.py:30
+msgid "Alignment"
+msgstr "Uitlijning"
 
-#: models.py:26 models.py:27
+#: models.py:33 models.py:34
 msgid "Button"
 msgstr "Knop"

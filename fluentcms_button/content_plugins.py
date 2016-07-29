@@ -17,9 +17,11 @@ class ButtonPlugin(ContentPlugin):
     fieldsets = (
         (None, {
             'fields': (
-                ('title', 'style',),
-                ('url', 'size',),
-                'block',
+                'title',
+                'url',
+                'style',
+                'size',
+                'align',
             ),
         }),
     )
