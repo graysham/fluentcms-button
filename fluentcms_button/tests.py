@@ -21,5 +21,7 @@ class ButtonTests(TestCase):
         Test the center-align feature.
         """
         item = create_content_item(ButtonItem, url='http://example.com', style='btn-default', title='TEST2', align='center')
-        self.assertHTMLEqual(render_content_items([item]).html,
-                             u'<div class="text-center"><a href="http://example.com" class="btn btn-default">TEST2</a></div>')
+        self.assertHTMLEqual(
+            render_content_items([item]).html,
+            u'<p class="text-center btn-center-wrapper"><a href="http://example.com" class="btn btn-default">TEST2</a></p>'
+        )
