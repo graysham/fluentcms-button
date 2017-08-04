@@ -1,6 +1,13 @@
 Changelog
 =========
 
+Version 1.2.1 (2017-08-04)
+--------------------------
+
+* Fix regenerating migrations on Python 3 due to str/bytes differences.
+* Fix missing migration for non-null fields.
+
+
 Version 1.2 (2016-07-29)
 ------------------------
 
