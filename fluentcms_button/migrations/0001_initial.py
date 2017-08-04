@@ -20,7 +20,7 @@ class Migration(migrations.Migration):
                 ('title', models.CharField(max_length=200, verbose_name='Title')),
                 ('url', fluent_contents.extensions.PluginUrlField(max_length=300, verbose_name='URL')),
                 ('style', models.CharField(max_length=50, verbose_name='Style', choices=appsettings.FLUENTCMS_BUTTON_STYLES)),
-                ('size', models.CharField(default=b'', max_length=10, verbose_name='Size', blank=True, choices=appsettings.FLUENTCMS_BUTTON_SIZES)),
+                ('size', models.CharField(default='', max_length=10, verbose_name='Size', blank=True, choices=appsettings.FLUENTCMS_BUTTON_SIZES)),
                 ('block', models.BooleanField(default=False, verbose_name='Span the full width')),
             ],
             options={

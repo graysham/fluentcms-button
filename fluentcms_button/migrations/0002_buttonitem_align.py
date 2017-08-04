@@ -14,6 +14,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='buttonitem',
             name='align',
-            field=models.CharField(blank=True, max_length=50, null=True, verbose_name='Alignment', choices=[(b'left', 'Left'), (b'center', 'Center'), (b'right', 'Right')]),
+            field=models.CharField(blank=True, max_length=50, null=True, verbose_name='Alignment', choices=[('', 'Inline'), ('left', 'Left'), ('center', 'Center'), ('right', 'Right'), ('block', 'Full Width')]),
         ),
     ]

@@ -15,9 +15,4 @@ class Migration(migrations.Migration):
             model_name='buttonitem',
             name='block',
         ),
-        migrations.AlterField(
-            model_name='buttonitem',
-            name='align',
-            field=models.CharField(default=b'', max_length=50, verbose_name='Alignment', blank=True, choices=[(b'', 'Inline'), (b'left', 'Left'), (b'center', 'Center'), (b'right', 'Right'), (b'block', 'Full Width')]),
-        ),
     ]
