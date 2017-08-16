@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import sys
 import django
-from django.conf import settings, global_settings as default_settings
+from django.conf import settings
 from django.core.management import execute_from_command_line
 
 if not settings.configured:
@@ -10,12 +10,6 @@ if not settings.configured:
             'default': {'ENGINE': 'django.db.backends.sqlite3', 'NAME': ':memory:',},
         },
         SITE_ID = 1,
-        TEMPLATE_LOADERS = (
-            'django.template.loaders.app_directories.Loader',
-        ),
-        TEMPLATE_CONTEXT_PROCESSORS = list(default_settings.TEMPLATE_CONTEXT_PROCESSORS) + [
-            'django.core.context_processors.request',
-        ],
         INSTALLED_APPS = (
             'django.contrib.contenttypes',
             'django.contrib.auth',
@@ -25,6 +19,26 @@ if not settings.configured:
             'fluentcms_button',
         ),
         MIDDLEWARE_CLASSES = (),
+        TEMPLATES = [
+            {
+                'BACKEND': 'django.template.backends.django.DjangoTemplates',
+                'DIRS': (),
+                'OPTIONS': {
+                    'loaders': (
+                        'django.template.loaders.filesystem.Loader',
+                        'django.template.loaders.app_directories.Loader',
+                    ),
+                    'context_processors': (
+                        'django.template.context_processors.debug',
+                        'django.template.context_processors.i18n',
+                        'django.template.context_processors.media',
+                        'django.template.context_processors.request',
+                        'django.template.context_processors.static',
+                        'django.contrib.auth.context_processors.auth',
+                    ),
+                },
+            },
+        ],
         FLUENT_CONTENTS_CACHE_OUTPUT = False,
         TEST_RUNNER = 'django.test.runner.DiscoverRunner',
     )
