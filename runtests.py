@@ -26,7 +26,7 @@ if not settings.configured:
         ),
         MIDDLEWARE_CLASSES = (),
         FLUENT_CONTENTS_CACHE_OUTPUT = False,
-        TEST_RUNNER = 'django.test.simple.DjangoTestSuiteRunner' if django.VERSION < (1,6) else 'django.test.runner.DiscoverRunner',
+        TEST_RUNNER = 'django.test.runner.DiscoverRunner',
     )
 
 DEFAULT_TEST_APPS = [
