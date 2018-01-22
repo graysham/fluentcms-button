@@ -16,7 +16,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='ButtonItem',
             fields=[
-                ('contentitem_ptr', models.OneToOneField(parent_link=True, auto_created=True, primary_key=True, serialize=False, to='fluent_contents.ContentItem')),
+                ('contentitem_ptr', models.OneToOneField(parent_link=True, auto_created=True, primary_key=True, serialize=False, to='fluent_contents.ContentItem', on_delete=models.CASCADE)),
                 ('title', models.CharField(max_length=200, verbose_name='Title')),
                 ('url', fluent_contents.extensions.PluginUrlField(max_length=300, verbose_name='URL')),
                 ('style', models.CharField(max_length=50, verbose_name='Style', choices=appsettings.FLUENTCMS_BUTTON_STYLES)),
