@@ -18,7 +18,7 @@ if not settings.configured:
             'fluent_contents.tests.testapp',
             'fluentcms_button',
         ),
-        MIDDLEWARE_CLASSES = (),
+        MIDDLEWARE = (),
         TEMPLATES = [
             {
                 'BACKEND': 'django.template.backends.django.DjangoTemplates',
