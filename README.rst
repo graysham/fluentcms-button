@@ -1,16 +1,16 @@
 fluentcms-button
 ===================
 
-.. image:: https://img.shields.io/travis/edoburu/fluentcms-button/master.svg?branch=master
-    :target: http://travis-ci.org/edoburu/fluentcms-button
+.. image:: https://img.shields.io/travis/django-fluent/fluentcms-button/master.svg?branch=master
+    :target: http://travis-ci.org/django-fluent/fluentcms-button
 .. image:: https://img.shields.io/pypi/v/fluentcms-button.svg
     :target: https://pypi.python.org/pypi/fluentcms-button/
 .. image:: https://img.shields.io/badge/wheel-yes-green.svg
     :target: https://pypi.python.org/pypi/fluentcms-button/
 .. image:: https://img.shields.io/pypi/l/fluentcms-button.svg
     :target: https://pypi.python.org/pypi/fluentcms-button/
-.. image:: https://img.shields.io/codecov/c/github/edoburu/fluentcms-button/master.svg
-    :target: https://codecov.io/github/edoburu/fluentcms-button?branch=master
+.. image:: https://img.shields.io/codecov/c/github/django-fluent/fluentcms-button/master.svg
+    :target: https://codecov.io/github/django-fluent/fluentcms-button?branch=master
 
 Displaying a Bootstrap 3 Button_ in text.
 
@@ -103,5 +103,5 @@ Contributing
 If you like this module, forked it, or would like to improve it, please let us know!
 Pull requests are welcome too. :-)
 
-.. _django-fluent-contents: https://github.com/edoburu/django-fluent-contents
+.. _django-fluent-contents: https://github.com/django-fluent/django-fluent-contents
 .. _Button: http://getbootstrap.com/css/#buttons
